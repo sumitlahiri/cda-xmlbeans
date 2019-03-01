@@ -1,0 +1,109 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+        <groupId>com.walgreens.rxit.ch</groupId>
+        <artifactId>ch-parent-pom</artifactId>
+        <version>1.0.2</version>
+    </parent>
+	<groupId>com.walgreens.rxit.ch.hl7</groupId>
+	<artifactId>ch-cda-xmlbeans</artifactId>
+	<version>1.0.1</version>
+	
+	<dependencies>
+        <dependency>
+            <groupId>org.apache.xmlbeans</groupId>
+            <artifactId>xmlbeans</artifactId>
+            <version>2.6.0</version>
+        </dependency>
+		<dependency>
+		    <groupId>commons-io</groupId>
+		    <artifactId>commons-io</artifactId>
+		</dependency>
+
+        
+        <!-- Logging dependencies -->
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+        </dependency>
+        
+        <!-- Test dependencies -->
+        <dependency>
+			<groupId>xmlunit</groupId>
+			<artifactId>xmlunit</artifactId>
+			<version>1.5</version>
+			<scope>test</scope>
+		</dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.5</source>
+                    <target>1.5</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>xmlbeans-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>xmlbeans</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <inherited>true</inherited>
+                <configuration>
+                    <schemaDirectory>src/main/resources/schema</schemaDirectory>
+                    <sourceGenerationDirectory>src/main/java</sourceGenerationDirectory>
+                    <sourceSchemas>
+                        <sourceSchema>CDA/infrastructure/cda/CDA.xsd</sourceSchema>
+                    </sourceSchemas>
+                    <xmlConfigs>
+                        <xmlConfig implementation="java.io.File">src/main/resources/config/xmlbeans.xsdconfig</xmlConfig>
+                    </xmlConfigs>
+                </configuration>
+            </plugin>
+        </plugins>
+        <pluginManagement>
+            <plugins>
+                <!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
+                <plugin>
+                    <groupId>org.eclipse.m2e</groupId>
+                    <artifactId>lifecycle-mapping</artifactId>
+                    <version>1.0.0</version>
+                    <configuration>
+                        <lifecycleMappingMetadata>
+                            <pluginExecutions>
+                                <pluginExecution>
+                                    <pluginExecutionFilter>
+                                        <groupId>
+                                            org.codehaus.mojo
+                                        </groupId>
+                                        <artifactId>
+                                            xmlbeans-maven-plugin
+                                        </artifactId>
+                                        <versionRange>
+                                            [2.3.3,)
+                                        </versionRange>
+                                        <goals>
+                                            <goal>xmlbeans</goal>
+                                        </goals>
+                                    </pluginExecutionFilter>
+                                    <action>
+                                        <ignore></ignore>
+                                    </action>
+                                </pluginExecution>
+                            </pluginExecutions>
+                        </lifecycleMappingMetadata>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+</project>

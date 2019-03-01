@@ -1,0 +1,449 @@
+<?xml-stylesheet type="text/xsl" href="CDA.xsl"?>
+<ClinicalDocument classCode="DOCCLIN" moodCode="EVN" xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 file:///C:/Connected%20Health/MDLive/CDA/infrastructure/cda/CDA.xsd">
+	<realmCode code="US"/>
+	<typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+	<templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.1"/>
+	<templateId root="2.16.840.1.113883.10.20.1"/>
+	<templateId root="2.16.840.1.113883.10.20.3"/>
+	<templateId root="2.16.840.1.113883.3.88.11.32.1"/>
+	<templateId root="2.16.840.1.113883.3.88.11.83.1"/>
+	<id root="2.16.840.1.113883.3.2018" extension="15012414987"/>
+	<code code="34133-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Summarization of Episode Note"/>
+	<title>Walgreens Summarization of Episode Note</title>
+	<effectiveTime value="20150123000000-0500"/>
+	<confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>
+	<languageCode code="en-US"/>
+	<recordTarget typeCode="RCT">
+		<patientRole classCode="PAT">
+			<id root="2.16.840.1.113883.3.2018" extension="3360162051"/>
+			<addr use="HP">
+				<streetAddressLine partType="SAL">1100 TEST STREET</streetAddressLine>
+				<city partType="CTY">HELENA</city>
+				<state partType="STA">AL</state>
+				<postalCode partType="ZIP">35080</postalCode>
+			</addr>
+			<telecom value="tel:" use="HP"/>
+			<patient classCode="PSN" determinerCode="INSTANCE">
+				<name use="L">
+					<family partType="FAM">PATIENTTEST</family>
+					<given partType="GIV">ONE</given>
+				</name>
+				<administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" codeSystemName="AdministrativeGenderCode" displayName="Male"/>
+				<birthTime value="19810101"/>
+				<raceCode nullFlavor="UNK" codeSystem="2.16.840.1.113883.6.238" codeSystemName="CDC Race and Ethnicity"/>
+				<ethnicGroupCode nullFlavor="UNK" codeSystem="2.16.840.1.113883.6.238" codeSystemName="CDC Race and Ethnicity"/>
+				<languageCommunication>
+					<templateId root="2.16.840.1.113883.3.88.11.32.2"/>
+					<templateId root="2.16.840.1.113883.3.88.11.83.2"/>
+					<templateId root="1.3.6.1.4.1.19376.1.5.3.1.2.1"/>
+					<languageCode nullFlavor="UNK"/>
+				</languageCommunication>
+			</patient>
+		</patientRole>
+	</recordTarget>
+	<author typeCode="AUT" contextControlCode="OP">
+		<time value="20150123000000-0500"/>
+		<assignedAuthor>
+			<id root="2.16.840.1.113883.4.6" extension="1528343670"/>
+			<addr use="WP">
+				<streetAddressLine partType="SAL">6996 US HIGHWAY 19 N</streetAddressLine>
+				<city partType="CTY">PINELLAS PARK</city>
+				<state partType="STA">FL</state>
+				<postalCode partType="ZIP">33781</postalCode>
+			</addr>
+			<telecom nullFlavor="UNK"/>
+			<assignedPerson classCode="PSN" determinerCode="INSTANCE">
+				<name use="L">
+					<family partType="FAM">PHAM</family>
+					<given partType="GIV">QUYNH</given>
+				</name>
+			</assignedPerson>
+			<representedOrganization classCode="ORG" determinerCode="INSTANCE">
+				<id root="2.16.840.1.113883.3.2018" extension="3795"/>
+				<name>Walgreens</name>
+				<telecom nullFlavor="UNK"/>
+				<addr use="WP">
+					<streetAddressLine partType="SAL">6996 US HIGHWAY 19 N</streetAddressLine>
+					<city partType="CTY">PINELLAS PARK</city>
+					<state partType="STA">FL</state>
+					<postalCode partType="ZIP">33781</postalCode>
+				</addr>
+			</representedOrganization>
+		</assignedAuthor>
+	</author>
+	<author typeCode="AUT" contextControlCode="OP">
+		<time value="20150123000000-0500"/>
+		<assignedAuthor>
+			<id root="2.16.840.1.113883.3.2018.1.2"/>
+			<addr use="WP">
+				<streetAddressLine partType="SAL">1425 Lake Cook Road</streetAddressLine>
+				<city partType="CTY">Deerfield</city>
+				<state partType="STA">IL</state>
+				<postalCode partType="ZIP">60015</postalCode>
+			</addr>
+			<telecom use="WP" value="tel:8477577058"/>
+			<telecom use="WP" value="mailto:ConnectedHealthRunSupport@walgreens.com"/>
+			<assignedAuthoringDevice classCode="DEV" determinerCode="INSTANCE">
+				<softwareName>ConnectedHealth</softwareName>
+				<asMaintainedEntity>
+					<effectiveTime nullFlavor="UNK"/>
+					<maintainingPerson>
+						<name>Walgreens Connected Health Support Team</name>
+					</maintainingPerson>
+				</asMaintainedEntity>
+			</assignedAuthoringDevice>
+			<representedOrganization classCode="ORG" determinerCode="INSTANCE">
+				<id root="2.16.840.1.113883.3.2018"/>
+				<name>Walgreens Co.</name>
+				<telecom use="WP" value="tel:8669249377"/>
+				<addr use="WP">
+					<streetAddressLine partType="SAL">200 Wilmot Road</streetAddressLine>
+					<city partType="CTY">Deerfield</city>
+					<state partType="STA">IL</state>
+					<postalCode partType="ZIP">60015</postalCode>
+				</addr>
+			</representedOrganization>
+		</assignedAuthor>
+	</author>
+	<custodian typeCode="CST">
+		<assignedCustodian classCode="ASSIGNED">
+			<representedCustodianOrganization classCode="ORG" determinerCode="INSTANCE">
+				<id root="2.16.840.1.113883.3.2018"/>
+				<name>Walgreens</name>
+				<telecom value="tel:8669249377" use="WP"/>
+				<addr use="WP">
+					<streetAddressLine partType="SAL">200 Wilmot Road</streetAddressLine>
+					<city partType="CTY">Deerfield</city>
+					<state partType="STA">IL</state>
+					<postalCode partType="ZIP">60015</postalCode>
+				</addr>
+			</representedCustodianOrganization>
+		</assignedCustodian>
+	</custodian>
+	<documentationOf typeCode="DOC">
+		<serviceEvent classCode="PCPR" moodCode="EVN">
+			<effectiveTime>
+				<low value="20150123000000-0500"/>
+				<high value="20150123000000-0500"/>
+			</effectiveTime>
+		</serviceEvent>
+	</documentationOf>
+	<component typeCode="COMP" contextConductionInd="true">
+		<structuredBody classCode="DOCBODY" moodCode="EVN">
+			<component typeCode="COMP" contextConductionInd="true">
+				<section classCode="DOCSECT" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.10.20.1.6"/>
+					<templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.23"/>
+					<templateId root="2.16.840.1.113883.3.88.11.83.117"/>
+					<code code="11369-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of immunizations"/>
+					<title representation="TXT" mediaType="text/plain">Immunizations</title>
+					<text mediaType="text/x-hl7-text+xml">
+						<content ID="IMMUN_SECT"/>
+						<table width="100%" border="1">
+							<thead>
+								<tr>
+									<th>VACCINE NAME</th>
+									<th>VACCINE MANUFACTURER</th>
+									<th>LOT NUMBER</th>
+									<th>EXPIRATION DATE</th>
+									<th>ADMINSTRATION DATE</th>
+									<th>ADMINISTERED AMOUNT</th>
+									<th>ROUTE CODE</th>
+									<th>BODY SITE</th>
+									<th>ADMINSTERING PROVIDER NAME</th>
+									<th>FACILITY</th>
+									<th>RxNumber</th>
+									<th>STATUS</th>
+									<th>IF REFUSED , REASON FOR REFUSAL</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<content ID="IMMUN_NAME">FLUVIRIN MULTIDOSE 2014-2015 (CVX code=141)</content>
+									</td>
+									<td>
+										<content ID="IMMUN_MANU">Novartis Pharmaceutical Corp.</content>
+									</td>
+									<td>
+										<content ID="IMMUN_LOT">1413801</content>
+									</td>
+									<td>
+										<content ID="IMMUN_EXP_DT">20150630</content>
+									</td>
+									<td>
+										<content ID="IMMUN_ADMIN_DT">20150123</content>
+									</td>
+									<td>
+										<content ID="IMMUN_ADMIN_AMT">.5 ml</content>
+									</td>
+									<td>
+										<content ID="IMMUN_ROUTE">Intramuscular</content>
+									</td>
+									<td>
+										<content ID="IMMUN_SITE">Right Upper Arm</content>
+									</td>
+									<td>
+										<content ID="IMMUN_ADMIN_PROV_NM">QUYNH PHAM</content>
+									</td>
+									<td>
+										<content ID="IMMUN_FACILITY">Walgreens</content>
+									</td>
+									<td>
+										<content ID="IMMUN_RXBBR">1356385165</content>
+									</td>
+									<td>
+										<content ID="IMMUN_STAT">Complete</content>
+									</td>
+									<td>
+										<content/>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</text>
+					<entry typeCode="DRIV">
+						<substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+							<templateId root="2.16.840.1.113883.10.20.1.24"/>
+							<templateId root="2.16.840.1.113883.3.88.11.83.13"/>
+							<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.12"/>
+							<id root="2.16.840.1.113883.3.2018" extension="20150124987-12345-1356385165"/>
+							<code code="IMMUNIZ" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
+							<text>
+								<reference value="#IMMUN_NAME"/>
+							</text>
+							<statusCode code="completed"/>
+							<effectiveTime xsi:type="urn:IVL_TS" value="20150123000000-0500" xmlns:urn="urn:hl7-org:v3">
+								<low value="20150123000000-0500"/>
+								<high value="20150123000000-0500"/>
+							</effectiveTime>
+							<routeCode nullFlavor="UNK">
+								<originalText>
+									<reference value="#IMMUN_ROUTE"/>
+								</originalText>
+							</routeCode>
+							<approachSiteCode nullFlavor="UNK">
+								<originalText>
+									<reference value="#IMMUN_SITE"/>
+								</originalText>
+							</approachSiteCode>
+							<doseQuantity value=".5" unit="ml"/>
+							<consumable>
+								<manufacturedProduct classCode="MANU">
+									<templateId root="2.16.840.1.113883.10.20.1.53"/>
+									<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.2"/>
+									<id nullFlavor="UNK"/>
+									<manufacturedMaterial>
+										<code code="141" codeSystem="2.16.840.1.113883.12.292" codeSystemName="CVX">
+											<originalText>
+												<reference value="#IMMUN_NAME"/>
+											</originalText>
+											<translation code="90658" codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT-4" displayName="FLUVIRIN MULTIDOSE 2014-2015"/>
+										</code>
+										<name>FLUVIRIN MULTIDOSE 2014-2015</name>
+										<lotNumberText>1413801</lotNumberText>
+									</manufacturedMaterial>
+									<manufacturerOrganization>
+										<id root="2.16.840.1.113883.12.227" extension="NOV"/>
+										<name>Novartis Pharmaceutical Corp.</name>
+										<telecom nullFlavor="UNK"/>
+										<addr nullFlavor="UNK"/>
+									</manufacturerOrganization>
+								</manufacturedProduct>
+							</consumable>
+							<performer typeCode="PRF">
+								<templateId root="2.16.840.1.113883.3.88.11.32.4"/>
+								<time>
+									<low value="20150123000000-0500"/>
+									<high value="20150123000000-0500"/>
+								</time>
+								<assignedEntity classCode="ASSIGNED">
+									<id root="2.16.840.1.113883.4.6" extension="1528343670"/>
+									<id nullFlavor="UNK"/>
+									<addr use="WP">
+										<streetAddressLine partType="SAL">6996 US HIGHWAY 19 N</streetAddressLine>
+										<city partType="CTY">PINELLAS PARK</city>
+										<state partType="STA">FL</state>
+										<postalCode partType="ZIP">33781</postalCode>
+									</addr>
+									<telecom nullFlavor="UNK"/>
+									<assignedPerson classCode="PSN" determinerCode="INSTANCE">
+										<name use="L">
+											<given partType="GIV">QUYNH</given>
+											<family partType="FAM">PHAM</family>
+										</name>
+									</assignedPerson>
+									<representedOrganization classCode="ORG" determinerCode="INSTANCE">
+										<id root="2.16.840.1.113883.3.2018" extension="3795"/>
+										<name>Walgreens</name>
+										<telecom nullFlavor="UNK"/>
+										<addr use="WP">
+											<streetAddressLine partType="SAL">6996 US HIGHWAY 19 N</streetAddressLine>
+											<city partType="CTY">PINELLAS PARK</city>
+											<state partType="STA">FL</state>
+											<postalCode partType="ZIP">33781</postalCode>
+										</addr>
+									</representedOrganization>
+								</assignedEntity>
+							</performer>
+						</substanceAdministration>
+					</entry>
+				</section>
+			</component>
+			<component>
+				<section>
+					<templateId root="2.16.840.1.113883.10.20.1.2"/>
+					<templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.13"/>
+					<templateId root="2.16.840.1.113883.3.88.11.83.102"/>
+					<id root="2.16.840.1.113883.3.2018" extension="877665"/>
+					<code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies, Adverse Reactions, Alerts"/>
+					<title>Active Allergies and Adverse Reactions</title>
+					<text>
+						<table>
+							<thead>
+								<tr>
+									<th>Allergen</th>
+									<th>Noted Date</th>
+									<th>Reactions</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr ID="ALRGY_1">
+									<td ID="ALEGN_1">Dairy</td>
+									<td ID="STATDT_1">06/01/2011</td>
+									<td ID="REACTION_1">Hives</td>
+								</tr>								
+							</tbody>
+						</table>
+					</text>
+					<entry>
+						<act classCode="ACT" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.1.27"/>
+							<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.1"/>
+							<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.3"/>
+							<templateId root="2.16.840.1.113883.3.88.11.32.6"/>
+							<templateId root="2.16.840.1.113883.3.88.11.83.6"/>
+							<id root="2.16.840.1.113883.3.2018" extension="12345_0304"/>
+							<code nullFlavor="NI"/>
+							<statusCode code="active"/>
+							<effectiveTime>
+								<low value="20110601014533"/>
+							</effectiveTime>
+							<entryRelationship inversionInd="false" typeCode="SUBJ" negationInd="false">
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5"/>
+									<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.6"/>
+									<templateId root="2.16.840.1.113883.10.20.1.18"/>
+									<templateId root="2.16.840.1.113883.10.20.1.28"/>
+									<id root="1.2.840.114350.1.13.76.3.7.2.768076" extension="5884"/>
+									<code code="ALG" codeSystem="2.16.840.1.113883.5.4" displayName="Allergy"/>
+									<text>
+										<reference value="#ALRGY_1"/>
+									</text>
+									<statusCode code="completed"/>
+									<effectiveTime>
+										<low value="20110601014533"/>									
+									</effectiveTime>
+									<value code="419199007" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" displayName="Allergy to substance" xsi:type="CD"/>
+									<participant typeCode="CSM">
+										<participantRole classCode="MANU">
+											<playingEntity classCode="MMAT">
+												<code nullFlavor="UNK">
+													<originalText>
+														<reference value="#ALEGN_1"/>
+													</originalText>
+												</code>
+												<name>Diary</name>
+											</playingEntity>
+										</participantRole>
+									</participant>
+									<entryRelationship inversionInd="true" typeCode="REFR">
+										<observation classCode="OBS" moodCode="EVN">
+											<templateId root="2.16.840.1.113883.10.20.1.39"/>
+											<code code="33999-4" codeSystem="2.16.840.1.113883.6.1" displayName="Status"/>
+											<statusCode code="completed"/>
+											<value xsi:type="CE" code="55561003" codeSystem="2.16.840.1.113883.6.96" displayName="Active"/>
+										</observation>
+									</entryRelationship>
+								</observation>
+							</entryRelationship>
+						</act>
+					</entry>
+				</section>
+			</component>
+			<component>
+				<section>
+					<templateId root="2.16.840.1.113883.10.20.1.11"/>
+					<templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.6"/>
+					<templateId root="2.16.840.1.113883.3.88.11.83.103"/>
+					<id root="2BADDC92-BE90-11E4-9AA7-9A0391A56DA8"/>
+					<code code="11450-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PROBLEM LIST"/>
+					<title>Conditions</title>
+					<text>
+						<table>
+							<thead>
+								<tr>
+									<th>Problem</th>
+									<th>Problem Code</th>
+									<th>Start Date</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr ID="PBLM_1">
+									<td ID="PBLMNM_1">Scoliosis</td>
+									<td ID="PBLMCD_1">737.30 (ICD-9-CM)</td>
+									<td ID="PBLMDT_1">01/06/2012</td>
+								</tr>
+							</tbody>
+						</table>
+					</text>
+					<entry>
+						<act classCode="ACT" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.1.27"/>
+							<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.1"/>
+							<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.2"/>
+							<templateId root="2.16.840.1.113883.3.88.11.32.7"/>
+							<templateId root="2.16.840.1.113883.3.88.11.83.7"/>
+							<id root="2.16.840.1.113883.3.2018" extension="9865"/>
+							<code nullFlavor="NA"/>
+							<statusCode code="active"/>
+							<effectiveTime>
+								<low value="20120601"/>
+							</effectiveTime>
+							<entryRelationship inversionInd="false" typeCode="SUBJ">
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5"/>
+									<templateId root="2.16.840.1.113883.10.20.1.28"/>
+									<id root="2.16.840.1.113883.3.2018" extension="87755"/>
+									<code code="64572001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Condition"/>
+									<text>
+										<reference value="#PBLMNM_1"/>
+									</text>
+									<statusCode code="completed"/>
+									<effectiveTime>
+										<low value="20120830"/>
+									</effectiveTime>
+									<value xsi:type="CD" code="737.30" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD-9CM" displayName="Scoliosis">
+										<originalText>
+											<reference value="#PBLMNM_1"/>
+										</originalText>
+									</value>
+									<entryRelationship typeCode="REFR">
+										<observation classCode="OBS" moodCode="EVN">
+											<code code="33999-4" codeSystem="2.16.840.1.113883.6.1" displayName="Status"/>
+											<statusCode code="completed"/>
+											<effectiveTime>
+												<low value="20120830"/>
+											</effectiveTime>
+											<value xsi:type="CE" code="55561003" codeSystem="2.16.840.1.113883.6.96" displayName="Active"/>
+										</observation>
+									</entryRelationship>
+								</observation>
+							</entryRelationship>
+						</act>
+					</entry>
+				</section>
+			</component>		
+		</structuredBody>
+	</component>
+</ClinicalDocument>

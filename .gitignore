@@ -1,0 +1,11 @@
+*~
+.classpath
+.project
+target
+.settings
+MANIFEST.MF
+*.jar
+*.class
+*.txt
+RemoteSystemsTempFiles
+*.svn
